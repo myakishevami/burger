@@ -1,0 +1,35 @@
+.best {
+  background: url('../img/fon_best.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.best__list {
+  display: flex;
+  justify-content: space-around;
+}
+/*
+.best__block {
+  display: flex;
+  flex-flow: column nowrap;
+  //justify-content: center;
+  //align-content: center;
+}*/
+
+.best__block {
+  &__icon {
+    text-align: center;
+    font-size: 100px;
+  }
+  
+  &__main {
+    text-align: center;
+    @include lifehack();
+    font-size: 28px;
+  }
+
+  &__text {
+    text-align: center;
+    @include ubuntu();
+    font-size: 14px;
+  }
+}

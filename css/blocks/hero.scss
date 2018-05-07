@@ -1,0 +1,72 @@
+.hero {
+  background: url('../img/fon.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav {
+  display:flex;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 15px;
+  }
+  &:first-child:before {
+    display: none;
+  }
+
+  &:last-child {
+    margin-right: 15px;
+  }
+
+}
+
+.nav__link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hero__content {
+  display:flex;
+  align-items: center;
+}
+
+.hero__content-desc {
+  @include lifehack();
+  font-size: 65px;
+  color: #fff;
+}
+
+.arrow-down__pic {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  margin-top: 80px;
+}

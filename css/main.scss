@@ -1,0 +1,33 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+//normalize
+@import "misc/normalize.scss";
+
+// setups
+@import "misc/mixins.scss";
+@import "misc/fonts.scss";
+@import "misc/layout.scss";
+@import "misc/icomoon.scss";
+
+
+//common
+@import "blocks/common/btn.scss";
+@import "blocks/common/section-title.scss";
+
+
+// blocks
+@import "blocks/hero.scss";
+@import "blocks/best.scss";
+@import "blocks/burgers.scss";
+@import "blocks/map.scss";
+@import "blocks/menu.scss";
+@import "blocks/order.scss";
+@import "blocks/reviews.scss";
+@import "blocks/team.scss";
+@import "blocks/slider.scss";
+
+

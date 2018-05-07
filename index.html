@@ -2,7 +2,9 @@
 <html lang="ru">
 
 <head>
-    <title><Бургеры></title>
+    <title>
+        <Бургеры>
+    </title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,700&amp;subset=cyrillic,cyrillic-ext"
         rel="stylesheet">
@@ -11,47 +13,129 @@
 
 <body>
     <div class="wrapper">
-      <section class="section_one">
-        <header class="header">
-            <div class="container">
-                <div class="separation clearfix">
-                    <div class="separation_one">
-                        <img class="logo" src="./img/logo.png" alt = "logo burger">
-                    </div>
-                    <div class="separation_two">
-                        <div class="menu">
-                            <ul class = "menu_list">
-                                <li class ="menu_list_el">о нас</li>
-                                <li class ="menu_list_el">.</li>
-                                <li class ="menu_list_el">бургеры</li>
-                                <li class ="menu_list_el">.</li>
-                                <li class ="menu_list_el">команда</li>
-                                <li class ="menu_list_el">.</li>
-                                <li class ="menu_list_el">меню</li>
-                                <li class ="menu_list_el">.</li>
-                                <li class ="menu_list_el">отзывы</li>
-                                <li class ="menu_list_el">.</li>
-                                <li class ="menu_list_el">контакты</li>
-                                <li class ="menu_list_el">заказать</li>
-                            </ul>
+        <div class="maincontent">
+
+            <section class="section hero">
+                <div class="container hero__container">
+                    <header class="header">
+                        <a class="logo">
+                            <img class="logo__pic" src="./img/logo.png" alt="logo burger">
+                        </a>
+                        <div class="header__btns">
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">о нас</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">бургеры</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">команда</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">меню</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">отзывы</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="btn">Заказать</a>
+                        </div>
+                    </header>
+                    <div class="hero__content">
+                        <div class="hero__pic">
+                            <img class="hero__pic-img" src="./img/burger.png" alt="BURGER">
+                        </div>
+                        <div class="hero__content-text">
+                            <h1 class="section-title">мы делаем</h1>
+                            <div class="hero__content-desc">натуральные бургеры</div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <div class="container clearfix">
-            <div class="main_picture">
-                <img class="main_picture__img" src="./img/burger.jpg" alt="JUST DO IT">
-            </div>
-            <div class="main_signature">
-                <p>мы делаем</p>
-                <p>натуральные бургеры</p>
-            </div>
+                <a class="arrow-down__pic">
+                    <img class="arrow-down__pic-img" src="./img/icons/arrow-scroll.svg" alt="arrow-down">
+                </a>
+            </section>
+            <section class="section best">
+                <div class="container best__container">
+                    <div class="section-title section-title_color_black section-title_position_center">
+                        мы лучшие
+                    </div>
+                    <ul class="best__list">
+                        <li class="best__elem">
+                            <div class="best__block">
+                                <div class="best__block__icon icon-meat"></div>
+                                <h2 class="best__block__main">100% свежее мясо</h2>
+                                <div class="best__block__text">
+                                    <p> Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
+                                        неравномерен.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="best__elem">
+                            <div class="best__block">
+                                <div class="best__block__icon icon-hand"></div>
+                                <h2 class="best__block__main">Ручная сборка</h2>
+                                <div class="best__block__text">
+                                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое
+                                        полустишие притягивает сюжетный реформаторский пафос.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="best__elem">
+                            <div class="best__block">
+                                <div class="best__block__icon icon-natural"></div>
+                                <h2 class="best__block__main">Натуральные ингридиенты</h2>
+                                <div class="best__block__text">
+                                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section burgers">
+                <div class="slider">
+                    <ul class = "slider__list">
+                        <li class = "slider__elem">
+                            <div class = "slider__col">
+                                <div class = "slider__img"></div>
+                            </div>
+                            <div class = "slider__col">
+                                    <h1 class = "section-title section-title_color_white">Dark BEEF Burger</h1>
+                                    <div class = "slider__col__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                                    <div class = "slider__col__info">500 рублей</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section team">
+                <div class="container">
 
+                </div>
+            </section>
+            <section class="section menu">
+
+            </section>
+            <section class="section reviews">
+
+            </section>
+            <section class="section order">
+
+            </section>
+            <section class="section map">
+
+            </section>
         </div>
-      </section>
-  </div>
-    
+    </div>
+
 </body>
 
 </html>
