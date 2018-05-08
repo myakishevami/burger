@@ -1,6 +1,59 @@
 .slider {
 
+width: 100%;
+height: 100%;
+
+&__list {
+  height: 100%;
+  overflow: hidden;
+}
+
+&__elem {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+&__col {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  
+  &__text {
+    font-size: 14px;
+  color: #fff;
+  line-height: 1.714;
+  text-align: left;
+  margin-bottom: 30px;
+
+ }
+
+   &__info {
+     display: flex;
+   }
+
+   &__price {
+    @include gagalin();
+    font-size: rem(30px);
+    color: $red;
+    margin-right: 10px;
+
+    span {
+      font-size: 2em;
+    }
+   }
+
+}
+
   &__img {
-background: url("./img/slider/blackburger.png")
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/slider/blackburger.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
 }

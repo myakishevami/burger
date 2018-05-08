@@ -687,8 +687,10 @@ footer {
   color: #f9b43b; }
   .section-title_color_black {
     color: #2f3234; }
-  .section-title_color_white {
-    color: #fff; }
+  .section-title_slider {
+    color: #fff;
+    line-height: 0.89;
+    text-align: left; }
   .section-title_position_center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -841,5 +843,50 @@ footer {
   background: url("../img/fon_team.jpg") center center no-repeat;
   background-size: cover; }
 
-.slider__img {
-  background: url("./img/slider/blackburger.png"); }
+.slider {
+  width: 100%;
+  height: 100%; }
+  .slider__list {
+    height: 100%;
+    overflow: hidden; }
+  .slider__elem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .slider__col {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .slider__col__text {
+      font-size: 14px;
+      color: #fff;
+      line-height: 1.714;
+      text-align: left;
+      margin-bottom: 30px; }
+    .slider__col__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .slider__col__price {
+      font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+      font-size: rem(30px);
+      color: #e35028;
+      margin-right: 10px; }
+      .slider__col__price span {
+        font-size: 2em; }
+  .slider__img {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/slider/blackburger.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto; }
