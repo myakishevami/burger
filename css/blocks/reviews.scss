@@ -1,4 +1,35 @@
 .reviews {
-  background: url('../img/fon_reviews.jpg') center center no-repeat;
+ 
+&__container {
+  min-height: 650px;
+}
+
+&__list {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+&__item {
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  width: 25%;
+  height: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  &:hover {
+    .reviews__hover {
+      opacity: 1;
+    }
+  }
+}
+
+&__hover {
+opacity: 0;
+transition: 0.3s;
+padding: 50px 20px;
+color: #fff;
+}
 }

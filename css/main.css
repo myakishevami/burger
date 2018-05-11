@@ -674,12 +674,17 @@ footer {
   color: #fff; }
 
 .btn {
-  padding: 10px 15px;
+  padding: 5px 0px;
+  text-align: center;
   background: #e35028;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  display: block; }
+  display: block;
+  height: 35px;
+  width: 100px; }
+  .btn__reviews {
+    background-color: #1f2122; }
 
 .section-title {
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
@@ -868,9 +873,37 @@ footer {
   background: url("../img/fon_order.jpg") center center no-repeat;
   background-size: cover; }
 
-.reviews {
-  background: url("../img/fon_reviews.jpg") center center no-repeat;
-  background-size: cover; }
+.reviews__container {
+  min-height: 650px; }
+
+.reviews__list {
+  width: 100%;
+  min-height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews__item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 25%;
+  height: 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  cursor: pointer; }
+  .reviews__item:hover .reviews__hover {
+    opacity: 1; }
+
+.reviews__hover {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  padding: 50px 20px;
+  color: #fff; }
 
 .team {
   background: url("../img/fon_team.jpg") center center no-repeat;
