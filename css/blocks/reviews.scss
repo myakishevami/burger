@@ -1,12 +1,9 @@
 .reviews {
- 
-&__container {
-  min-height: 650px;
-}
+height: 100vh;
 
 &__list {
   width: 100%;
-  min-height: 650px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
 }

@@ -6,7 +6,7 @@
 
 &__container {
   width: 100%;
-  min-height: 650px;
+  height: 100vh;
 }
 
   &__title {
@@ -15,11 +15,11 @@
   }
 
 &__list {
- transform: rotate(-90deg) translateY(-50%);
+ 
  display: flex;
  flex-direction: column;
  position: absolute;
- bottom: 37%;
+ //bottom: 37%;
  right: 0;
  min-width: 650px;
  //align-items: flex-start;
@@ -34,6 +34,7 @@
 
 &__elem {
  // height: 100%;
+ transform: rotate(-90deg) translateY(-50%);
 }
 
   &__name {
@@ -41,7 +42,7 @@
     font-size: 40px;
     color: #fff;
     text-decoration: none;
-   
+    transform: rotate(-90deg) translateY(-50%);
   }
 }
 

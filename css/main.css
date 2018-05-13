@@ -681,8 +681,8 @@ footer {
   text-decoration: none;
   border-radius: 5px;
   display: block;
-  height: 35px;
-  width: 100px; }
+  height: 100%;
+  width: 100%; }
   .btn__reviews {
     background-color: #1f2122; }
 
@@ -840,14 +840,11 @@ footer {
   position: relative; }
   .menu__container {
     width: 100%;
-    min-height: 650px; }
+    height: 100vh; }
   .menu__title {
     color: #fff;
     margin-top: 100px; }
   .menu__list {
-    -webkit-transform: rotate(-90deg) translateY(-50%);
-    -ms-transform: rotate(-90deg) translateY(-50%);
-    transform: rotate(-90deg) translateY(-50%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -856,54 +853,57 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
     position: absolute;
-    bottom: 37%;
     right: 0;
     min-width: 650px; }
   .menu__content {
     width: 100%;
     height: 100%;
     position: absolute; }
+  .menu__elem {
+    -webkit-transform: rotate(-90deg) translateY(-50%);
+    -ms-transform: rotate(-90deg) translateY(-50%);
+    transform: rotate(-90deg) translateY(-50%); }
   .menu__name {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
     font-size: 40px;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transform: rotate(-90deg) translateY(-50%);
+    -ms-transform: rotate(-90deg) translateY(-50%);
+    transform: rotate(-90deg) translateY(-50%); }
 
 .order {
   background: url("../img/fon_order.jpg") center center no-repeat;
   background-size: cover; }
 
-.reviews__container {
-  min-height: 650px; }
-
-.reviews__list {
-  width: 100%;
-  min-height: 650px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-.reviews__item {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 25%;
-  height: 50%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  cursor: pointer; }
-  .reviews__item:hover .reviews__hover {
-    opacity: 1; }
-
-.reviews__hover {
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  padding: 50px 20px;
-  color: #fff; }
+.reviews {
+  height: 100vh; }
+  .reviews__list {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .reviews__item {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 25%;
+    height: 50%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    cursor: pointer; }
+    .reviews__item:hover .reviews__hover {
+      opacity: 1; }
+  .reviews__hover {
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 50px 20px;
+    color: #fff; }
 
 .team {
   background: url("../img/fon_team.jpg") center center no-repeat;
@@ -928,8 +928,8 @@ footer {
   width: 100%;
   height: 650px; }
   .slider__component {
-    position: relative;
-    width: 100%; }
+    cursor: pointer;
+    height: 100vh; }
     .slider__component:hover .slider__component__drop {
       top: 0;
       opacity: 0.902; }
@@ -959,7 +959,6 @@ footer {
     .slider__component__table td {
       padding: 10px; }
     .slider__component__btn {
-      cursor: pointer;
       border-radius: 5px;
       background-color: rgba(227, 80, 40, 0.4);
       width: 90px;
