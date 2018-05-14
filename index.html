@@ -311,67 +311,73 @@
             <section class="section order">
                 <div class="container order__container">
                     <h1 class="section-title section-title_position_center">закажите доставку</h1>
-                    <form class="order__form">
-                        <div class="order__form__row">
-                            <label class="order__form__row__block">
-                                <div class="order__form__row__block--name">Имя</div>
-                                <input type="text" class="order__form__row__block--elem">
-                            </label>
-                            <label class="order__form__row__block">
-                                <div class="order__form__row__block--name">Телефон</div>
-                                <input type="text" class="order__form__row__block--elem">
-                            </label>
-                        </div>
-                        <div class="order__form__row">
-                            <label class="order__form__row__block">
-                                <div class="order__form__row__block--name">Улица</div>
-                                <input type="text" class="order__form__row__block--elem">
-                            </label>
-                        </div>
-                        <div class="order__form__row">
-                            <label class="order__form__row__block">
-                                <div class="order__form__row__block--name">Дом</div>
-                                <input type="text" class="order__form__row__block--elem">
-                            </label>
-                            <label class="order__form__row__block">
-                                <div class="order__form__row__block--name">Корпус</div>
-                                <input type="text" class="order__form__row__block--elem">
-                            </label>
-                            <label class="order__form__row__block">
-                                <div class="order__form__row__block--name">Квартира</div>
-                                <input type="text" class="order__form__row__block--elem">
-                            </label>
-                            <label class="order__form__row__block">
-                                <div class="order__form__row__block--name">Этаж</div>
-                                <input type="text" class="order__form__row__block--elem">
-                            </label>
-                        </div>
-                    </form>
-                    <form class="order__form">
-                        <div class="order__form__row">
-                            <label class="order__form__row__block">
-                                <div class="order__form__row__block--name">Комментарий</div>
-                                <input type="text" class="order__form__row__block--elem">
-                            </label>
-                        </div>
-                        <div class="order__form__row">
+                    <div class="order__part">
+                        <form class="order__form">
+                            <div class="order__form__row">
                                 <label class="order__form__row__block">
+                                    <div class="order__form__row__block--name">Имя</div>
+                                    <input type="text" class="order__form__row__block--text">
+                                </label>
+                                <label class="order__form__row__block">
+                                    <div class="order__form__row__block--name">Телефон</div>
+                                    <input type="text" class="order__form__row__block--text">
+                                </label>
+                            </div>
+                            <div class="order__form__row">
+                                <label class="order__form__row__block">
+                                    <div class="order__form__row__block--name">Улица</div>
+                                    <input type="text" class="order__form__row__block--text">
+                                </label>
+                            </div>
+                            <div class="order__form__row">
+                                <label class="order__form__row__block">
+                                    <div class="order__form__row__block--name">Дом</div>
+                                    <input type="text" class="order__form__row__block--text">
+                                </label>
+                                <label class="order__form__row__block">
+                                    <div class="order__form__row__block--name">Корпус</div>
+                                    <input type="text" class="order__form__row__block--text">
+                                </label>
+                                <label class="order__form__row__block">
+                                    <div class="order__form__row__block--name">Квартира</div>
+                                    <input type="text" class="order__form__row__block--text">
+                                </label>
+                                <label class="order__form__row__block">
+                                    <div class="order__form__row__block--name">Этаж</div>
+                                    <input type="text" class="order__form__row__block--text">
+                                </label>
+                            </div>
+                        </form>
+
+
+                        <form class="order__form">
+                            <div class="order__form__row">
+                                <label class="order__form__row__block">
+                                    <div class="order__form__row__block--name">Комментарий</div>
+                                    <input type="text" class="order__form__row__block--text">
+                                </label>
+                            </div>
+                            <div class="order__form__row">
+                                <label class="order__form__row__block">
+                                    <input type="radio" class="order__form__row__block--radio">
                                     <div class="order__form__row__block--name">Потребуется сдача</div>
-                                    <input type = "radio" class="order__form__row__block--elem">
                                 </label>
                                 <label class="order__form__row__block">
-                                        <div class="order__form__row__block--name">Оплата по карте</div>
-                                        <input type = "radio" class="order__form__row__block--elem">
-                                    </label>
-                            </div>
-                            <label class="order__form__row__block">
-                                    <div class="order__form__row__block--name">Не перезванивать</div>
-                                    <input type = "checkbox" class="order__form__row__block--elem">
+                                    <input type="radio" class="order__form__row__block--radio">
+                                    <div class="order__form__row__block--name">Оплата по карте</div>
                                 </label>
                             </div>
-                    </form>
-                    <a href="#" class="btn">Заказать</a>
-                    <a href="#" class="btn">Очистить</a>
+                            <label class="order__form__row__block">
+                                <input type="checkbox" class="order__form__row__block--check">
+                                <div class="order__form__row__block--name">Не перезванивать</div>
+
+                            </label>
+                            <a href="#" class="btn">Заказать</a>
+                            <a href="#" class="btn">Очистить</a>
+                        </form>
+
+                    </div>
+
                 </div>
             </section>
             <section class="section map">
@@ -379,7 +385,49 @@
             </section>
         </div>
     </div>
-
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="separation">
+                <div class="separation_one">
+                    <div class="signature">Сделано с любовью и старанием
+                        <br> на курсе "HTML + CSS" в
+                        <span class="bold under">Loftschool</span>.
+                        <br> Автор работы:
+                        <span class="bold"> Мякишева Мария</span>
+                    </div>
+                </div>
+                <div class="separation_two">
+                    <a href="http://cr47645.tmweb.ru/folder/inner/" class="logo">АФРОДИТА</a>
+                </div>
+                <div class="separation_three">
+                    <div class="social">
+                        <div class="title--white title-social">Наши социальные сети</div>
+                        <ul class="social_list">
+                            <li class="social_el">
+                                <a class="social_el_link" href="http://vk.com">
+                                    <img class="social_el_logo" src="./img/SN_logo/vk.png"> </a>
+                            </li>
+                            <li class="social_el">
+                                <a class="social_el_link" href="http://facebook.com">
+                                    <img class="social_el_logo" src="./img/SN_logo/fb.png"> </a>
+                            </li>
+                            <li class="social_el">
+                                <a class="social_el_link" href="http://gmail.com">
+                                    <img class="social_el_logo" src="./img/SN_logo/Google.png"> </a>
+                            </li>
+                            <li class="social_el">
+                                <a class="social_el_link" href="http://twitter.com">
+                                    <img class="social_el_logo" src="./img/SN_logo/twit.png"> </a>
+                            </li>
+                            <li class="social_el">
+                                <a class="social_el_link" href="http://mail.ru">
+                                    <img class="social_el_logo" src="./img/SN_logo/mail.png"> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
 </body>
 
 </html>
