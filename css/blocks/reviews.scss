@@ -23,10 +23,23 @@ height: 100vh;
   }
 }
 
+&__text {
+  padding: 20px;
+  @include ubuntu();
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+
 &__hover {
 opacity: 0;
 transition: 0.3s;
 padding: 50px 20px;
 color: #fff;
+}
+&__title {
+  @include gagalin();
+  font-size: 14px;
+  color: #fff;
 }
 }

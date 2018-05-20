@@ -2,10 +2,11 @@
 
 width: 100%;
 height: 650px;
+padding: 90px 45px;
 
 &__component {
   cursor: pointer;
-  height: 100vh;
+  height: 90px;
   &:hover {
     .slider__component__drop {
       top: 0;

@@ -20,6 +20,8 @@ body {
   // width: 95%;
   display: flex;
   flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
 }
 
 .wrapper {
@@ -66,12 +68,17 @@ footer {
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+  
 }
 
 .section {
   min-height: 650px;
-
+  display: block;
   &_centered {
     display: flex;
     flex-direction: column;

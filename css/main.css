@@ -485,10 +485,15 @@ footer {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  margin: 0;
+  padding: 0; }
 
 .section {
-  min-height: 650px; }
+  min-height: 650px;
+  display: block; }
   .section_centered {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -674,15 +679,13 @@ footer {
   color: #fff; }
 
 .btn {
-  padding: 5px 0px;
+  padding: 10px 15px;
   text-align: center;
   background: #e35028;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  display: block;
-  height: 100%;
-  width: 100%; }
+  height: 100%; }
   .btn__reviews {
     background-color: #1f2122; }
 
@@ -831,8 +834,8 @@ footer {
   background-size: cover; }
 
 .map {
-  background: url("../img/fon_map.jpg") center center no-repeat;
-  background-size: cover; }
+  width: 600px;
+  height: 400px; }
 
 .menu {
   background: url("../img/fon_menu.jpg") center center no-repeat;
@@ -843,39 +846,59 @@ footer {
     height: 100vh; }
   .menu__title {
     color: #fff;
-    margin-top: 100px; }
+    text-align: left;
+    margin: 100px 90px; }
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     position: absolute;
     right: 0;
+    height: 100%;
     min-width: 650px; }
   .menu__content {
     width: 100%;
     height: 100%;
     position: absolute; }
   .menu__elem {
-    -webkit-transform: rotate(-90deg) translateY(-50%);
-    -ms-transform: rotate(-90deg) translateY(-50%);
-    transform: rotate(-90deg) translateY(-50%); }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .menu__name {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
     font-size: 40px;
     color: #fff;
     text-decoration: none;
-    -webkit-transform: rotate(-90deg) translateY(-50%);
-    -ms-transform: rotate(-90deg) translateY(-50%);
-    transform: rotate(-90deg) translateY(-50%); }
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 30px;
+    white-space: nowrap;
+    text-align: left;
+    display: inline-block;
+    width: 100%; }
+  .menu__btn {
+    position: relative;
+    width: 70px;
+    background: url("../img/fon_menu.jpg") center center no-repeat;
+    background-size: cover; }
+  .menu__text {
+    max-width: 0px;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    font-size: 14px; }
 
 .order {
   background: url("../img/fon_order.jpg") center center no-repeat;
   background-size: cover;
   color: #fff; }
+  .order__btn {
+    margin-right: 10px; }
   .order__part {
     width: 100%;
     display: -webkit-box;
@@ -899,15 +922,17 @@ footer {
         .order__form__row__block--text {
           padding: 8px 20px;
           border-radius: 5px;
-          border: none;
+          border: 2px solid transparent;
           width: 100%;
           margin-bottom: 10px; }
           .order__form__row__block--text:focus {
-            border-color: #e35028; }
+            border-color: #f9b43b; }
         .order__form__row__block--name {
           display: inline-block; }
         .order__form__row__block--radio {
           margin-bottom: 10px; }
+          .order__form__row__block--radio:checked {
+            color: #e35028; }
         .order__form__row__block--check {
           margin-bottom: 10px; }
 
@@ -932,12 +957,23 @@ footer {
     cursor: pointer; }
     .reviews__item:hover .reviews__hover {
       opacity: 1; }
+  .reviews__text {
+    padding: 20px;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    text-align: left; }
   .reviews__hover {
     opacity: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     padding: 50px 20px;
+    color: #fff; }
+  .reviews__title {
+    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+    font-size: 14px;
     color: #fff; }
 
 .team {
@@ -961,10 +997,11 @@ footer {
 
 .slider {
   width: 100%;
-  height: 650px; }
+  height: 650px;
+  padding: 90px 45px; }
   .slider__component {
     cursor: pointer;
-    height: 100vh; }
+    height: 90px; }
     .slider__component:hover .slider__component__drop {
       top: 0;
       opacity: 0.902; }
