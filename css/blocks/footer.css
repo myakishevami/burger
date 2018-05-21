@@ -1,2 +1,3 @@
 .footer {
-  background: url("../img/fon_footer.jpg") center center no-repeat; }
+  background: url("../img/fon_footer.jpg") center center no-repeat;
+  background-size: cover; }
