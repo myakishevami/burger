@@ -1206,7 +1206,8 @@ footer {
     margin-left: 10px;
     fill: rgba(96, 96, 96, 0.3);
     width: 25px;
-    height: 25px; }
+    height: 25px;
+    cursor: pointer; }
     .footer__icon:hover {
       fill: white; }
     .footer__icon:first-child {

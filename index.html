@@ -13,6 +13,7 @@
     <script src="./scripts/map.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"> </script>
     <script src="./scripts/slick.js"></script>
+    <script src="./scripts/popup.js"></script>
     <script src="./scripts/scripts.js"></script>
 </head>
 
@@ -390,7 +391,8 @@
                             <h2 class="reviews__title">Константин Спилберг</h2>
                             <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                            <a href="#" class="btn btn_reviews">Подробнее</a>
+                                <button class="btn btn_reviews" id="openOverlay">Подробнее</button>
+                           <!-- <a href="#" class="btn btn_reviews" id="openOverlay">Подробнее</a> -->
                         </div>
                     </li>
                     <li class="reviews__item" style="background-image: url('./img/reviews/fon3.jpg')">
@@ -584,6 +586,16 @@
                 </div>
             </div>
     </footer>
+    <script type="template">
+        <div class="overlay">
+          <div class="container__popup">
+            <a class="close" href="#">x</a>
+            <div class="content__popup">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem soluta ea quas quis quasi officiis eius illo ipsum obcaecati, reiciendis consequatur fuga? Nemo nihil sapiente unde eum nostrum vero iusto?</div>
+            </div>
+          </div>
+        </div>
+        </script>
 </body>
 
 </html>
