@@ -38,10 +38,11 @@
   }
    
   &__content {
-    display: none;
+    height: 0px;
 
     &__active {
       display: flex;
+      height: 100%; //от какой высоты?..
     }
 
   }

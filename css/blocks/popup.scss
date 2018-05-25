@@ -1,41 +1,39 @@
-.overlay {
+.reviews-popups {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10000;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(47, 50, 52, 0.92);
+  z-index: 2000;
 }
 
-.container__popup {
+.reviews-popups__window {
   position: relative;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e45028;
+  width: 80%;
+  min-width: 300px;
+  max-width: 900px;
+  max-height: 900px;
+  min-height: 200px;
 }
 
-.content__popup {
-  width: 400px;
-  background-color: #444;
-  border-radius: 5px;
-  padding: 10px;
-  color: #fff;
-  font: 16px Helvetica, sans-serif;
-  margin: 0;
+.reviews-popups__text {
+  text-align: justify;
+  height: 100%;
+  overflow: hidden;
 }
 
-.close {
-  font: 16px Helvetica, sans-serif;
-  color: #fff;
+.reviews-popups__close {
   position: absolute;
-  right: -5px;
-  top: -10px;
-  background-color: #d00;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  text-decoration: none;
+  padding: 5px;
+  top: 0;
+  right: 0;
 }

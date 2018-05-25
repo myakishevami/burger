@@ -43,3 +43,12 @@ color: #fff;
   color: #fff;
 }
 }
+
+.btn_reviews {
+  background-color: red;
+  &:active {
+  .reviews-popups {
+    top: 0;
+  }
+}
+}

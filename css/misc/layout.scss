@@ -21,7 +21,7 @@ body {
   // width: 95%;
   display: flex;
   flex-direction: column;
-  //justify-content: center;
+  justify-content: center;
   //align-items: center;
 }
 
@@ -78,7 +78,8 @@ footer {
 }
 
 .section {
-  min-height: 650px;
+  height: 100vh;
+ // min-height: 650px;
   display: block;
   &_centered {
     display: flex;

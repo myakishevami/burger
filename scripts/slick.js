@@ -44,8 +44,10 @@
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-                nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+               // prevArrow: '<button class="slider__arrow__left" aria-label="Previous" type="button">Previous</button>',
+                prevArrow: '<button class="slider__arrow slider__arrow__left"><span class="icon-arrow-scroll"></span></button>',
+               // nextArrow: '<button class="slider__arrow__right" aria-label="Next" type="button">Next</button>',
+                nextArrow: '<button class="slider__arrow slider__arrow__right"><span class="icon-arrow-scroll"></span></button>',
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
@@ -441,8 +443,8 @@
 
         if (_.options.arrows === true ) {
 
-            _.$prevArrow = $(_.options.prevArrow).addClass('slick-arrow');
-            _.$nextArrow = $(_.options.nextArrow).addClass('slick-arrow');
+            _.$prevArrow = $(_.options.prevArrow).addClass('slider__arrow slider__arrow__left');
+            _.$nextArrow = $(_.options.nextArrow).addClass('slider__arrow slider__arrow__right');
 
             if( _.slideCount > _.options.slidesToShow ) {
 
@@ -489,6 +491,8 @@
             _.$slider.addClass('slick-dotted');
 
             dot = $('<ul />').addClass(_.options.dotsClass);
+
+
 
             for (i = 0; i <= _.getDotCount(); i += 1) {
                 dot.append($('<li />').append(_.options.customPaging.call(this, _, i)));
@@ -860,7 +864,7 @@
         if ( _.$prevArrow && _.$prevArrow.length ) {
 
             _.$prevArrow
-                .removeClass('slick-disabled slick-arrow slick-hidden')
+                .removeClass('slick-disabled slider__arrow slider__arrow__left slick-hidden')
                 .removeAttr('aria-hidden aria-disabled tabindex')
                 .css('display','');
 
@@ -872,7 +876,7 @@
         if ( _.$nextArrow && _.$nextArrow.length ) {
 
             _.$nextArrow
-                .removeClass('slick-disabled slick-arrow slick-hidden')
+                .removeClass('slick-disabled slider__arrow slider__arrow__right slick-hidden')
                 .removeAttr('aria-hidden aria-disabled tabindex')
                 .css('display','');
 

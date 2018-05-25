@@ -448,7 +448,10 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .wrapper {
   position: relative;
@@ -493,7 +496,7 @@ footer {
   padding: 0; }
 
 .section {
-  min-height: 650px;
+  height: 100vh;
   display: block; }
   .section_centered {
     display: -webkit-box;
@@ -845,7 +848,16 @@ footer {
   position: relative; }
   .menu__container {
     width: 100%;
-    height: 100vh; }
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
   .menu__title {
     color: #fff;
     text-align: left;
@@ -880,7 +892,6 @@ footer {
     position: absolute;
     bottom: 30px;
     white-space: nowrap;
-    text-align: left;
     display: inline-block;
     width: 100%; }
   .menu__btn {
@@ -889,11 +900,17 @@ footer {
     background: url("../img/fon_menu.jpg") center center no-repeat;
     background-size: cover; }
   .menu__text {
-    max-width: 0px;
+    width: 0px;
     overflow: hidden;
     text-align: left;
     color: #fff;
-    font-size: 14px; }
+    font-size: 14px;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-weight: 300; }
+    .menu__text__active {
+      background-color: rgba(47, 50, 52, 0.92);
+      width: 540px;
+      height: 100%; }
 
 .order {
   background: url("../img/fon_order.jpg") center center no-repeat;
@@ -978,6 +995,11 @@ footer {
     font-size: 14px;
     color: #fff; }
 
+.btn_reviews {
+  background-color: red; }
+  .btn_reviews:active .reviews-popups {
+    top: 0; }
+
 .team {
   background: url("../img/fon_team.jpg") center center no-repeat;
   background-size: cover;
@@ -1000,8 +1022,7 @@ footer {
 .slider {
   width: 100%;
   height: 100%;
-  padding: 90px 45px;
-  position: relative; }
+  padding: 90px 45px; }
   .slider__arrow {
     position: absolute;
     top: 50%;
@@ -1011,15 +1032,17 @@ footer {
     z-index: 100; }
     .slider__arrow__left {
       left: 0;
-      right: auto; }
+      right: auto;
+      cursor: pointer; }
       .slider__arrow__left span:before {
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
         position: absolute; }
     .slider__arrow__right {
-      right: 0;
-      left: auto; }
+      right: 3vw;
+      left: auto;
+      cursor: pointer; }
       .slider__arrow__right span:before {
         -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
@@ -1088,10 +1111,11 @@ footer {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    height: 100%; }
+    height: 400px; }
   .slider__col {
     width: 50%;
     height: 100%;
+    min-height: 320px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1158,11 +1182,12 @@ footer {
     border-bottom-width: 0px; }
 
 .acco__content {
-  display: none; }
+  height: 0px; }
   .acco__content__active {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    height: 100%; }
 
 .acco__pic {
   width: 100px;
@@ -1284,7 +1309,7 @@ footer {
   display: none;
   float: left;
   height: 100%;
-  min-height: 1px; }
+  min-height: 320px; }
 
 [dir='rtl'] .slick-slide {
   float: right; }
@@ -1311,3 +1336,45 @@ footer {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.reviews-popups {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(47, 50, 52, 0.92);
+  z-index: 2000; }
+
+.reviews-popups__window {
+  position: relative;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e45028;
+  width: 80%;
+  min-width: 300px;
+  max-width: 900px;
+  max-height: 900px;
+  min-height: 200px; }
+
+.reviews-popups__text {
+  text-align: justify;
+  height: 100%;
+  overflow: hidden; }
+
+.reviews-popups__close {
+  position: absolute;
+  padding: 5px;
+  top: 0;
+  right: 0; }
