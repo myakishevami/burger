@@ -20,30 +20,30 @@
 .reviews-popups__window {
   position: relative;
   background-color: #FFF;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #e45028;
+  padding: rem(20px);
+  border-radius: rem(10px);
+  border: rem(1px) solid #e45028;
   width: 80%;
-  min-width: 300px;
-  max-width: 460px;
-  max-height: 250px;
-  min-height: 200px;
+  min-width: rem(300px);
+  max-width: rem(460px);
+  max-height: rem(250px);
+  min-height: rem(200px);
 }
 
 .reviews-popups__name {
   color: #2f3234;
   @include gagalin;
-  font-size: 14px;
+  font-size: rem(14px);
   text-align: left;
   height: 100%;
   overflow: hidden;
-  padding: 0 0 20px 0;
+  padding: 0 0 rem(20px) 0;
 }
 
 .reviews-popups__text {
   color: #2f3234;
   @include ubuntu;
-  font-size: 14px;
+  font-size: rem(14px);
   text-align: justify;
   height: 100%;
   overflow: hidden;
@@ -51,7 +51,12 @@
 
 .reviews-popups__close {
   position: absolute;
-  padding: 5px;
-  top: 20px;
-  right: 20px;
+  padding: rem(5px);
+  top: rem(20px);
+  right: rem(20px);
+
+  &-img {
+    width: rem(20px);
+    height: rem(20px);
+  }
  }

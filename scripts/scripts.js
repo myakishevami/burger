@@ -3,7 +3,7 @@ $(document).ready(function() {
 $('.slider__list').slick();
 
 $('#fullpage').fullpage({
-  navigation: true
+  menu: "#myMenu"
 });
 
 $('.acco__elem').on('click', function (e) {

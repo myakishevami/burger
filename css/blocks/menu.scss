@@ -15,7 +15,7 @@
   &__title {
     color: #fff;
     text-align: left;
-    margin: 100px 90px;
+    margin: rem(100px) rem(90px);
   }
 
 &__list {
@@ -26,7 +26,7 @@
  
  right: 0;
  height: 100%;
- min-width: 650px;
+ min-width: rem(650px);
 }
 
 &__content {
@@ -41,12 +41,12 @@ display: flex;
 
   &__name {
     @include gagalin ();
-    font-size: 40px;
+    font-size: rem(40px);
     color: #fff;
     text-decoration: none;
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 30px;
+    bottom: rem(30px);
     white-space: nowrap;
     display: inline-block;
     width: 100%;
@@ -54,8 +54,7 @@ display: flex;
 
     &__btn {
       position: relative;
-      width: 70px;
-      //background: url('../img/fon_menu.jpg') center center no-repeat;
+      width: rem(70px);
       background-size: cover;
 
     }
@@ -65,26 +64,20 @@ display: flex;
     width: 0px;
     text-align: left;
     color: #fff;
-    font-size: 14px;    
+    font-size: rem(14px);    
     @include ubuntu;
-    //height: 100%;
-  }
+}
 
 .menu__elem__active {
   background-color: rgba(47, 50, 52, 0.92);
-  //z-index: 100  ;
   
-  //.menu__popup {
-  //  width: 620px;
-   // right: -80px;
-  //}
   .menu__popup__text{    
-    width: 520px; 
-    padding: 60px 30px;
+    width: rem(520px); 
+    padding: rem(60px) rem(30px);
   }
   .menu__popup__btn {
       position: relative;
-      width: 70px;
+      width: rem(70px);
       background: url('../img/menu/fon1.png') center center no-repeat;
       background-size: cover;
       background-color: rgba(47, 50, 52, 0.92);

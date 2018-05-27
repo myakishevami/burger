@@ -58,7 +58,7 @@ main {
  * Add the correct margin in IE 8.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1em rem(40px); }
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -265,7 +265,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+  outline: rem(1px) dotted ButtonText; }
 
 /**
  * Correct the padding in Firefox.
@@ -336,7 +336,7 @@ textarea {
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  outline-offset: -2px;
+  outline-offset: rem(-2px);
   /* 2 */ }
 
 /**
@@ -429,7 +429,7 @@ body {
   height: 100%; }
 
 body {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -442,7 +442,7 @@ body {
 .container {
   margin: 0 auto;
   position: relative;
-  width: 940px;
+  width: 58.75rem;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,7 +458,7 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
+  min-width: 60rem;
   min-height: 100%;
   overflow: hidden; }
 
@@ -686,19 +686,19 @@ footer {
   color: #fff; }
 
 .btn {
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem;
   text-align: center;
   background: #e35028;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   height: 100%; }
   .btn__reviews {
     background-color: #1f2122; }
 
 .section-title {
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #f9b43b; }
   .section-title_color_black {
     color: #2f3234; }
@@ -734,7 +734,8 @@ footer {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: auto; }
 
 .header__btns {
   display: -webkit-box;
@@ -765,15 +766,15 @@ footer {
   .nav__item:before {
     content: "";
     display: block;
-    width: 4px;
-    height: 4px;
+    width: 0.25rem;
+    height: 0.25rem;
     border-radius: 50%;
     background: #fff;
-    margin: 0 15px; }
+    margin: 0 0.9375rem; }
   .nav__item:first-child:before {
     display: none; }
   .nav__item:last-child {
-    margin-right: 15px; }
+    margin-right: 0.9375rem; }
 
 .nav__link {
   color: #fff;
@@ -787,19 +788,20 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto; }
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-bottom: 3.125rem; }
 
 .hero__content-desc {
   font-family: 'Lifehack-Medium';
-  font-size: 65px;
+  font-size: 4.0625rem;
   color: #fff; }
 
 .arrow-down__pic {
   position: absolute;
   left: 50%;
-  bottom: 40px; }
+  bottom: 2.5rem; }
 
 .best {
   background: url("../img/fon_best.jpg") center center no-repeat;
@@ -812,27 +814,20 @@ footer {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
-/*
-.best__block {
-  display: flex;
-  flex-flow: column nowrap;
-  //justify-content: center;
-  //align-content: center;
-}*/
 .best__block__icon {
   text-align: center;
-  font-size: 100px; }
+  font-size: 6.25rem; }
 
 .best__block__main {
   text-align: center;
   font-family: 'Lifehack-Medium';
-  font-size: 28px; }
+  font-size: 1.75rem; }
 
 .best__block__text {
   text-align: center;
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 14px; }
+  font-size: 0.875rem; }
 
 .burgers {
   background: url("../img/fon_burger.jpg") center center no-repeat;
@@ -862,7 +857,7 @@ footer {
   .menu__title {
     color: #fff;
     text-align: left;
-    margin: 100px 90px; }
+    margin: 6.25rem 5.625rem; }
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -873,7 +868,7 @@ footer {
     position: absolute;
     right: 0;
     height: 100%;
-    min-width: 650px; }
+    min-width: 40.625rem; }
   .menu__content {
     width: 100%;
     height: 100%;
@@ -884,38 +879,38 @@ footer {
     display: flex; }
   .menu__name {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #fff;
     text-decoration: none;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 30px;
+    bottom: 1.875rem;
     white-space: nowrap;
     display: inline-block;
     width: 100%; }
   .menu__btn {
     position: relative;
-    width: 70px;
+    width: 4.375rem;
     background-size: cover; }
 
 .menu__popup__text {
   width: 0px;
   text-align: left;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300; }
 
 .menu__elem__active {
   background-color: rgba(47, 50, 52, 0.92); }
   .menu__elem__active .menu__popup__text {
-    width: 520px;
-    padding: 60px 30px; }
+    width: 32.5rem;
+    padding: 3.75rem 1.875rem; }
   .menu__elem__active .menu__popup__btn {
     position: relative;
-    width: 70px;
+    width: 4.375rem;
     background: url("../img/menu/fon1.png") center center no-repeat;
     background-size: cover;
     background-color: rgba(47, 50, 52, 0.92); }
@@ -925,7 +920,7 @@ footer {
   background-size: cover;
   color: #fff; }
   .order__btn {
-    margin-right: 10px; }
+    margin-right: 0.625rem; }
   .order__part {
     width: 100%;
     display: -webkit-box;
@@ -945,23 +940,23 @@ footer {
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        margin-right: 20px; }
+        margin-right: 1.25rem; }
         .order__form__row__block--text {
-          padding: 8px 20px;
-          border-radius: 5px;
-          border: 2px solid transparent;
+          padding: 0.5rem 1.25rem;
+          border-radius: 0.3125rem;
+          border: 0.125rem solid transparent;
           width: 100%;
-          margin-bottom: 10px; }
+          margin-bottom: 0.625rem; }
           .order__form__row__block--text:focus {
             border-color: #f9b43b; }
         .order__form__row__block--name {
           display: inline-block; }
         .order__form__row__block--radio {
-          margin-bottom: 10px; }
+          margin-bottom: 0.625rem; }
           .order__form__row__block--radio:checked {
             color: #e35028; }
         .order__form__row__block--check {
-          margin-bottom: 10px; }
+          margin-bottom: 0.625rem; }
 
 .reviews {
   height: 100vh; }
@@ -985,10 +980,10 @@ footer {
     .reviews__item:hover .reviews__hover {
       opacity: 1; }
   .reviews__text {
-    padding: 20px;
+    padding: 1.25rem;
     font-family: 'Ubuntu', Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #fff;
     text-align: left; }
   .reviews__hover {
@@ -996,12 +991,15 @@ footer {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    padding: 50px 20px;
+    padding: 3.125rem 1.25rem;
     color: #fff; }
   .reviews__title {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #fff; }
+
+.btn_reviews {
+  border: 0; }
 
 .team {
   background: url("../img/fon_team.jpg") center center no-repeat;
@@ -1017,10 +1015,9 @@ footer {
     opacity: 0.929;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    display: flex; }
+  .team__title {
+    text-align: center; }
 
 .slider {
   width: 100%;
@@ -1161,19 +1158,27 @@ footer {
 
 .acco__desc {
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
-  margin-left: 20px; }
+  margin-left: 1.25rem; }
+  .acco__desc__text {
+    width: 90%; }
   .acco__desc__position {
     font-weight: bold;
-    margin-bottom: 20px; }
+    margin-bottom: 1.25rem; }
+
+.acco__elem {
+  margin: 0 6.25rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .acco__name {
   color: #fff;
   text-decoration: none;
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,7 +1186,7 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 10px; }
+  margin-bottom: 0.625rem; }
   .acco__name__active {
     color: #f9b43b; }
   .acco__name:before {
@@ -1189,12 +1194,12 @@ footer {
     display: block;
     width: 0;
     height: 0;
-    border: 5px solid transparent;
+    border: 0.3125rem solid transparent;
     border-top-color: #f9b43b;
-    border-bottom-width: 0px; }
+    border-bottom-width: 0rem; }
 
 .acco__content {
-  height: 0px;
+  height: 0rem;
   overflow: hidden; }
   .acco__content__active {
     display: -webkit-box;
@@ -1203,13 +1208,13 @@ footer {
     height: 100%; }
 
 .acco__pic {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
   overflow: hidden;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  max-width: 100px; }
+  max-width: 6.25rem; }
 
 .acco__elem__active .acco__name {
   color: #f9b43b; }
@@ -1222,22 +1227,24 @@ footer {
 
 .footer {
   background: url("../img/fon_footer.jpg") center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: absolute;
+  bottom: 0; }
   .footer__container {
-    height: 58px; }
+    height: 3.625rem; }
   .footer__signature {
     font-family: 'Ubuntu';
     color: #fff;
-    font-size: 14px; }
+    font-size: 0.875rem; }
     .footer__signature__number {
       font-family: 'Ubuntu';
       font-weight: bold;
       color: #e45028;
-      font-size: 14px; }
+      font-size: 0.875rem; }
   .footer__separation {
-    height: 75px;
+    height: 4.6875rem;
     width: 100%;
-    padding: 10px 0px;
+    padding: 0.625rem 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -1250,10 +1257,10 @@ footer {
   .footer__icon {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     fill: rgba(96, 96, 96, 0.3);
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
     cursor: pointer; }
     .footer__icon:hover {
       fill: white; }
@@ -1262,8 +1269,8 @@ footer {
   .footer__wrap {
     text-align: right;
     margin: 0 auto;
-    padding: 10px 0px;
-    margin-bottom: 5px; }
+    padding: 0.625rem 0px;
+    margin-bottom: 0.3125rem; }
     .footer__wrap:after {
       content: '';
       display: inline-block;
@@ -1331,7 +1338,7 @@ footer {
   display: none;
   float: left;
   height: 100%;
-  min-height: 320px; }
+  min-height: 20rem; }
 
 [dir='rtl'] .slick-slide {
   float: right; }
@@ -1354,7 +1361,7 @@ footer {
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
-  border: 1px solid transparent; }
+  border: 0.0625rem solid transparent; }
 
 .slick-arrow.slick-hidden {
   display: none; }
@@ -1386,60 +1393,74 @@ footer {
 .reviews-popups__window {
   position: relative;
   background-color: #FFF;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #e45028;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #e45028;
   width: 80%;
-  min-width: 300px;
-  max-width: 460px;
-  max-height: 250px;
-  min-height: 200px; }
+  min-width: 18.75rem;
+  max-width: 28.75rem;
+  max-height: 15.625rem;
+  min-height: 12.5rem; }
 
 .reviews-popups__name {
   color: #2f3234;
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: left;
   height: 100%;
   overflow: hidden;
-  padding: 0 0 20px 0; }
+  padding: 0 0 1.25rem 0; }
 
 .reviews-popups__text {
   color: #2f3234;
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: justify;
   height: 100%;
   overflow: hidden; }
 
 .reviews-popups__close {
   position: absolute;
-  padding: 5px;
-  top: 20px;
-  right: 20px; }
+  padding: 0.3125rem;
+  top: 1.25rem;
+  right: 1.25rem; }
+  .reviews-popups__close-img {
+    width: 1.25rem;
+    height: 1.25rem; }
 
 .nav-sidebar {
   position: fixed;
-  top: 90px;
-  right: 50px; }
-
-.nav-list-elem {
-  margin-bottom: 15px;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: #fff; }
+  top: 5.625rem;
+  right: 3.125rem; }
 
 .active .nav-list-elem {
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   background-color: #fff; }
 
 .nav-elem {
+  display: inline-block;
+  margin-bottom: 0.9375rem;
+  border: 0.0625rem solid transparent;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: #fff; }
+  width: 1rem;
+  height: 1rem;
+  position: relative; }
+  .nav-elem:before {
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff; }
+
+.nav-list-elem:hover .nav-elem, .nav-list-elem.active .nav-elem {
+  border: 0.0625rem solid #fff; }

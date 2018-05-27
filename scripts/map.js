@@ -81,6 +81,8 @@ $(document).ready(function() {
         .add(myPlacemark2)
         .add(myPlacemark3)
         .add(myPlacemark4);
-        
+
+        myMap.behaviors.disable('scrollZoom');        
 });
+
  });

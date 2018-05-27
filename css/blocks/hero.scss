@@ -9,6 +9,7 @@
 .header {
   display: flex;
   align-items: center;
+  margin-bottom: auto;
 }
 
 .header__btns {
@@ -32,18 +33,18 @@
   &:before {
     content: "";
     display: block;
-    width: 4px;
-    height: 4px;
+    width: rem(4px);
+    height: rem(4px);
     border-radius: 50%;
     background: #fff;
-    margin: 0 15px;
+    margin: 0 rem(15px);
   }
   &:first-child:before {
     display: none;
   }
 
   &:last-child {
-    margin-right: 15px;
+    margin-right: rem(15px);
   }
 
 }
@@ -57,21 +58,18 @@
 .hero__content {
   display:flex;
   align-items: center;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
+  margin-bottom: rem(50px);
 }
 
 .hero__content-desc {
   @include lifehack();
-  font-size: 65px;
+  font-size: rem(65px);
   color: #fff;
 }
 
 .arrow-down__pic {
-  //display: flex;
-  //justify-content: center;
-  //align-content: flex-end;
-  //margin-top: 80px;
   position: absolute;
   left: 50%;
- bottom: 40px;
+  bottom: rem(40px);
 }
