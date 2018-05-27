@@ -14,14 +14,15 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"> </script>
     <script src="./scripts/slick.js"></script>
     <script src="./scripts/popup.js"></script>
+    <script src="./scripts/jquery.fullpage.js"></script>
     <script src="./scripts/scripts.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="maincontent">
+        <div class="maincontent" id="fullpage">
 
-            <section class="section hero">
+            <section class="section hero" data-anchor="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <a class="logo">
@@ -31,26 +32,26 @@
                             <nav class="nav">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">о нас</a>
+                                        <a href="#best" class="nav__link">о нас</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">бургеры</a>
+                                        <a href="#burgers" class="nav__link">бургеры</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">команда</a>
+                                        <a href="#team" class="nav__link">команда</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">меню</a>
+                                        <a href="#menu" class="nav__link">меню</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">отзывы</a>
+                                        <a href="#reviews" class="nav__link">отзывы</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">контакты</a>
+                                        <a href="#section__map" class="nav__link">контакты</a>
                                     </li>
                                 </ul>
                             </nav>
-                            <a href="#" class="btn">Заказать</a>
+                            <a href="#order" class="btn">Заказать</a>
                         </div>
                     </header>
                     <div class="hero__content">
@@ -63,11 +64,11 @@
                         </div>
                     </div>
                 </div>
-                <a class="arrow-down__pic">
+                <a href = "#best" class="arrow-down__pic">
                     <img class="arrow-down__pic-img" src="./img/icons/arrow-scroll.svg" alt="arrow-down">
                 </a>
             </section>
-            <section class="section section_centered best">
+            <section class="section section_centered best" data-anchor="best">
                 <div class="container best__container">
                     <div class="section-title section-title_color_black section-title_position_center">
                         мы лучшие
@@ -107,7 +108,7 @@
                 </div>
             </section>
 
-            <section class="section section_centered burgers">
+            <section class="section section_centered burgers" data-anchor="burgers">
                 <div class="container container__slider">
                     <div class="slider">
                         <!--<a href="#" class="slider__arrow slider__arrow__left">
@@ -181,7 +182,7 @@
                                     <div class="slider__col__info">
                                         <div class="slider__col__price">
                                             <span>500</span> рублей</div>
-                                        <a href="#" class="btn">Заказать</a>
+                                        <a href="#order" class="btn">Заказать</a>
                                     </div>
                                 </div>
                             </li>
@@ -239,7 +240,7 @@
                                             </table>
                                         </div>
                                     </div>
-                                    <div class="slider__img"></div>
+                                    <div class="slider__img" style="background-image: url('./img/slider/blackburger.png')"></div>
                                 </div>
                                 <div class="slider__col">
                                     <h1 class="section-title section-title_slider">Dark BEEF Burger</h1>
@@ -249,7 +250,7 @@
                                     <div class="slider__col__info">
                                         <div class="slider__col__price">
                                             <span>10500</span> рублей</div>
-                                        <a href="#" class="btn">Заказать</a>
+                                        <a href="#order" class="btn">Заказать</a>
                                     </div>
                                 </div>
                             </li>
@@ -258,7 +259,7 @@
                 </div>
             </section>
 
-            <section class="section team">
+            <section class="section team" data-anchor="team">
                 <div class="container team__container">
                     <div class="team__title section-title">Команда</div>
                     <ul class="acco">
@@ -277,21 +278,7 @@
                             </div>
                         </li>
                         <li class="acco__elem">
-                            <a href="#" class="acco__name acco__name__active">дэниэл рэдклиф</a>
-                            <div class="acco__content acco__content__active">
-                                <div class="acco__pic">
-                                    <img src="./img/team/men.jpg" alt="foto">
-                                </div>
-                                <div class="acco__desc">
-                                    <div class="acco__desc__position">Оператор</div>
-                                    <div class="acco__desc__text">
-                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="acco__elem">
-                            <a href="#" class="acco__name">дэниэл рэдклиф</a>
+                            <a href="#" class="acco__name">ричард джеймс</a>
                             <div class="acco__content">
                                 <div class="acco__pic">
                                     <img src="./img/team/men.jpg" alt="foto">
@@ -305,7 +292,21 @@
                             </div>
                         </li>
                         <li class="acco__elem">
-                            <a href="#" class="acco__name">дэниэл рэдклиф</a>
+                            <a href="#" class="acco__name">джек финн</a>
+                            <div class="acco__content">
+                                <div class="acco__pic">
+                                    <img src="./img/team/men.jpg" alt="foto">
+                                </div>
+                                <div class="acco__desc">
+                                    <div class="acco__desc__position">Оператор</div>
+                                    <div class="acco__desc__text">
+                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="acco__elem">
+                            <a href="#" class="acco__name">николай иванов</a>
                             <div class="acco__content">
                                 <div class="acco__pic">
                                     <img src="./img/team/men.jpg" alt="foto">
@@ -321,7 +322,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section menu">
+            <section class="section menu" data-anchor="menu">
                 <div class="container menu__container">
                     <div class="section-title menu__title">меню</div>
                     <div class="menu__content">
@@ -330,7 +331,7 @@
                                 <a href="#" class="menu__btn" style="background-image: url('./img/menu/fon1.png')">
                                     <span class="menu__name">для мясоедов</span>
                                 </a>
-                                <div class="menu__text">
+                                <div class="menu__popup__text">
                                     <span>
                                         Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
                                         Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
@@ -346,7 +347,7 @@
                                 <a href="#" class="menu__btn" style="background-image: url('./img/menu/fon2.png')">
                                     <span class="menu__name">вегетарианское</span>
                                 </a>
-                                <div class="menu__text">
+                                <div class="menu__popup__text">
                                     <span>
                                         Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
                                         Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
@@ -362,7 +363,7 @@
                                 <a href="#" class="menu__btn" style="background-image: url('./img/menu/fon3.png')">
                                     <span class="menu__name">диетическое</span>
                                 </a>
-                                <div class="menu__text">
+                                <div class="menu__popup__text">
                                     <span>
                                         Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
                                         Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
@@ -374,12 +375,11 @@
                                     </span>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="section reviews">
+            <section class="section reviews" data-anchor="reviews">
                 <ul class="reviews__list">
                     <li class="reviews__item" style="background-image: url('./img/reviews/fon1.jpg')">
                         <div class="reviews__hover">
@@ -391,8 +391,8 @@
                             <h2 class="reviews__title">Константин Спилберг</h2>
                             <p class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                                <button class="btn btn_reviews" id="openOverlay">Подробнее</button>
-                           <!-- <a href="#" class="btn btn_reviews" id="openOverlay">Подробнее</a> -->
+                            <button class="btn btn_reviews" id="openOverlay">Подробнее</button>
+                            <!-- <a href="#" class="btn btn_reviews" id="openOverlay">Подробнее</a> -->
                         </div>
                     </li>
                     <li class="reviews__item" style="background-image: url('./img/reviews/fon3.jpg')">
@@ -428,17 +428,23 @@
                 </ul>
                 <div class="reviews-popups">
                     <div class="reviews-popups__window">
-                        <div class="reviews-popups__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, veniam officiis expedita hic dolores reprehenderit dolor quam dicta impedit, accusamus eaque fugiat saepe rerum, praesentium, obcaecati temporibus a illum ab.
+                        <div class="reviews-popups__content">
+                            <h3 class="reviews-popups__name">Константин Спилберг</h3>
+                            <div class="reviews-popups__text">
+                                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
+                                мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них
+                                и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
+                                мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                            </div>
                         </div>
                         <a href="#" class="reviews-popups__close">
-                            <img src="../img/icons/close.svg" alt="reviews_popups__close">
+                            <img src="./img/icons/close.svg" width="20px" height="20px" alt="reviews_popups__close">
                         </a>
                     </div>
-                 </div>
+                </div>
             </section>
 
-            <section class="section section_centered order">
+            <section class="section section_centered order" data-anchor="order">
                 <div class="container order__container">
                     <h1 class="section-title section-title_position_center">закажите доставку</h1>
                     <div class="order__part">
@@ -509,7 +515,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section__map">
+            <section class="section section__map" data-anchor="section__map">
                 <div id="map" class="map"></div>
             </section>
         </div>
@@ -596,16 +602,49 @@
                 </div>
             </div>
     </footer>
-    <script type="template">
-        <div class="overlay">
-          <div class="container__popup">
-            <a class="close" href="#">x</a>
-            <div class="content__popup">
-              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem soluta ea quas quis quasi officiis eius illo ipsum obcaecati, reiciendis consequatur fuga? Nemo nihil sapiente unde eum nostrum vero iusto?</div>
-            </div>
-          </div>
-        </div>
-        </script>
+    <!--
+    <div class="nav-sidebar">
+        <ul class="nav-list" id = "myMenu">
+            <li data-menuanchor="hero" class="nav-list-elem">
+                <a class="nav-elem" href="#"></a>
+            </li>
+            <li data-menuanchor="best" class="nav-list-elem">
+                <a class="nav-elem" href="#">
+                    <div class="nav-elem-cont"></div>
+                </a>
+            </li>
+            <li data-menuanchor="burgers" class="nav-list-elem">
+                <a class="nav-elem" href="#">
+                    <div class="nav-elem-cont"></div>
+                </a>
+            </li>
+            <li data-menuanchor="team" class="nav-list-elem">
+                <a class="nav-elem" href="#">
+                    <div class="nav-elem-cont"></div>
+                </a>
+            </li>
+            <li data-menuanchor="menu" class="nav-list-elem">
+                <a class="nav-elem" href="#">
+                    <div class="nav-elem-cont"></div>
+                </a>
+            </li>
+            <li data-menuanchor="reviews" class="nav-list-elem">
+                <a class="nav-elem" href="#">
+                    <div class="nav-elem-cont"></div>
+                </a>
+            </li>
+            <li data-menuanchor="order" class="nav-list-elem">
+                <a class="nav-elem" href="#">
+                    <div class="nav-elem-cont"></div>
+                </a>
+            </li>
+            <li data-menuanchor="section__map" class="nav-list-elem">
+                <a class="nav-elem" href="#">
+                    <div class="nav-elem-cont"></div>
+                </a>
+            </li>
+        </ul>
+    </div> -->
 </body>
 
 </html>

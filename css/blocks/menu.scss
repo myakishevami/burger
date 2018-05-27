@@ -22,15 +22,11 @@
  
  display: flex;
  justify-content: flex-end;
- //flex-direction: column;
  position: absolute;
  
- //bottom: 37%;
  right: 0;
  height: 100%;
- //align-items: flex-start;
-// align-content: flex-end;
-min-width: 650px;
+ min-width: 650px;
 }
 
 &__content {
@@ -59,24 +55,38 @@ display: flex;
     &__btn {
       position: relative;
       width: 70px;
-      background: url('../img/fon_menu.jpg') center center no-repeat;
+      //background: url('../img/fon_menu.jpg') center center no-repeat;
       background-size: cover;
 
     }
-
-    &__text {
-      width: 0px;
-      overflow: hidden;
-      text-align: left;
-      color: #fff;
-      font-size: 14px;
-      @include ubuntu;
-
-      &__active {
-        background-color: rgba(47, 50, 52, 0.92);
-        width: 540px;
-        height: 100%;
-      }
-    }
 }
 
+.menu__popup__text {
+    width: 0px;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;    
+    @include ubuntu;
+    //height: 100%;
+  }
+
+.menu__elem__active {
+  background-color: rgba(47, 50, 52, 0.92);
+  //z-index: 100  ;
+  
+  //.menu__popup {
+  //  width: 620px;
+   // right: -80px;
+  //}
+  .menu__popup__text{    
+    width: 520px; 
+    padding: 60px 30px;
+  }
+  .menu__popup__btn {
+      position: relative;
+      width: 70px;
+      background: url('../img/menu/fon1.png') center center no-repeat;
+      background-size: cover;
+      background-color: rgba(47, 50, 52, 0.92);
+  }
+}

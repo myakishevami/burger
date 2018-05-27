@@ -10,6 +10,11 @@
   overflow: hidden;
   background-color: rgba(47, 50, 52, 0.92);
   z-index: 2000;
+  transition: 0.3s;
+
+  &__active {
+    top: 0;
+  }
 }
 
 .reviews-popups__window {
@@ -20,12 +25,25 @@
   border: 1px solid #e45028;
   width: 80%;
   min-width: 300px;
-  max-width: 900px;
-  max-height: 900px;
+  max-width: 460px;
+  max-height: 250px;
   min-height: 200px;
 }
 
+.reviews-popups__name {
+  color: #2f3234;
+  @include gagalin;
+  font-size: 14px;
+  text-align: left;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 0 20px 0;
+}
+
 .reviews-popups__text {
+  color: #2f3234;
+  @include ubuntu;
+  font-size: 14px;
   text-align: justify;
   height: 100%;
   overflow: hidden;
@@ -34,6 +52,6 @@
 .reviews-popups__close {
   position: absolute;
   padding: 5px;
-  top: 0;
-  right: 0;
-}
+  top: 20px;
+  right: 20px;
+ }

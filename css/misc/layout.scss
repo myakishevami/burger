@@ -11,6 +11,7 @@ body {
   position: relative;
   @include ubuntu();
   color: $black;
+  position: relative;
 }
 
 .container {
@@ -81,6 +82,7 @@ footer {
   height: 100vh;
  // min-height: 650px;
   display: block;
+  position: relative;
   &_centered {
     display: flex;
     flex-direction: column;

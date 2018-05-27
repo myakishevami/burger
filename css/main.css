@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url(blocks/jquery.fullpage.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -435,7 +436,8 @@ body {
   position: relative;
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
-  color: #2f3234; }
+  color: #2f3234;
+  position: relative; }
 
 .container {
   margin: 0 auto;
@@ -497,7 +499,8 @@ footer {
 
 .section {
   height: 100vh;
-  display: block; }
+  display: block;
+  position: relative; }
   .section_centered {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -722,7 +725,8 @@ footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
 
 .header {
   display: -webkit-box;
@@ -782,7 +786,10 @@ footer {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
 
 .hero__content-desc {
   font-family: 'Lifehack-Medium';
@@ -790,15 +797,9 @@ footer {
   color: #fff; }
 
 .arrow-down__pic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: end;
-  align-content: flex-end;
-  margin-top: 80px; }
+  position: absolute;
+  left: 50%;
+  bottom: 40px; }
 
 .best {
   background: url("../img/fon_best.jpg") center center no-repeat;
@@ -897,20 +898,27 @@ footer {
   .menu__btn {
     position: relative;
     width: 70px;
-    background: url("../img/fon_menu.jpg") center center no-repeat;
     background-size: cover; }
-  .menu__text {
-    width: 0px;
-    overflow: hidden;
-    text-align: left;
-    color: #fff;
-    font-size: 14px;
-    font-family: 'Ubuntu', Helvetica, sans-serif;
-    font-weight: 300; }
-    .menu__text__active {
-      background-color: rgba(47, 50, 52, 0.92);
-      width: 540px;
-      height: 100%; }
+
+.menu__popup__text {
+  width: 0px;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300; }
+
+.menu__elem__active {
+  background-color: rgba(47, 50, 52, 0.92); }
+  .menu__elem__active .menu__popup__text {
+    width: 520px;
+    padding: 60px 30px; }
+  .menu__elem__active .menu__popup__btn {
+    position: relative;
+    width: 70px;
+    background: url("../img/menu/fon1.png") center center no-repeat;
+    background-size: cover;
+    background-color: rgba(47, 50, 52, 0.92); }
 
 .order {
   background: url("../img/fon_order.jpg") center center no-repeat;
@@ -995,11 +1003,6 @@ footer {
     font-size: 14px;
     color: #fff; }
 
-.btn_reviews {
-  background-color: red; }
-  .btn_reviews:active .reviews-popups {
-    top: 0; }
-
 .team {
   background: url("../img/fon_team.jpg") center center no-repeat;
   background-size: cover;
@@ -1022,7 +1025,16 @@ footer {
 .slider {
   width: 100%;
   height: 100%;
-  padding: 90px 45px; }
+  padding: 90px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .slider__arrow {
     position: absolute;
     top: 50%;
@@ -1031,18 +1043,20 @@ footer {
     transform: translate(0, -50%);
     z-index: 100; }
     .slider__arrow__left {
-      left: 0;
+      left: -15px;
       right: auto;
-      cursor: pointer; }
+      cursor: pointer;
+      border: 0px; }
       .slider__arrow__left span:before {
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
         position: absolute; }
     .slider__arrow__right {
-      right: 3vw;
+      right: -15px;
       left: auto;
-      cursor: pointer; }
+      cursor: pointer;
+      border: 0px; }
       .slider__arrow__right span:before {
         -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
@@ -1099,9 +1113,7 @@ footer {
       -ms-flex-align: center;
       align-items: center; }
   .slider__list {
-    width: 100%;
-    height: 100%;
-    overflow: hidden; }
+    width: 100%; }
   .slider__elem {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1182,7 +1194,8 @@ footer {
     border-bottom-width: 0px; }
 
 .acco__content {
-  height: 0px; }
+  height: 0px;
+  overflow: hidden; }
   .acco__content__active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1197,6 +1210,15 @@ footer {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100px; }
+
+.acco__elem__active .acco__name {
+  color: #f9b43b; }
+
+.acco__elem__active .acco__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
 
 .footer {
   background: url("../img/fon_footer.jpg") center center no-repeat;
@@ -1354,7 +1376,12 @@ footer {
   height: 100vh;
   overflow: hidden;
   background-color: rgba(47, 50, 52, 0.92);
-  z-index: 2000; }
+  z-index: 2000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .reviews-popups__active {
+    top: 0; }
 
 .reviews-popups__window {
   position: relative;
@@ -1364,11 +1391,24 @@ footer {
   border: 1px solid #e45028;
   width: 80%;
   min-width: 300px;
-  max-width: 900px;
-  max-height: 900px;
+  max-width: 460px;
+  max-height: 250px;
   min-height: 200px; }
 
+.reviews-popups__name {
+  color: #2f3234;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 0 20px 0; }
+
 .reviews-popups__text {
+  color: #2f3234;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
   text-align: justify;
   height: 100%;
   overflow: hidden; }
@@ -1376,5 +1416,30 @@ footer {
 .reviews-popups__close {
   position: absolute;
   padding: 5px;
-  top: 0;
-  right: 0; }
+  top: 20px;
+  right: 20px; }
+
+.nav-sidebar {
+  position: fixed;
+  top: 90px;
+  right: 50px; }
+
+.nav-list-elem {
+  margin-bottom: 15px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #fff; }
+
+.active .nav-list-elem {
+  margin-bottom: 15px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #fff; }
+
+.nav-elem {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #fff; }

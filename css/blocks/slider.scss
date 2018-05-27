@@ -3,6 +3,9 @@
 width: 100%;
 height: 100%;
 padding: 90px 45px;
+display: flex;
+    align-items: center;
+    justify-content: center;
 //position: relative;
 
 &__arrow {
@@ -12,9 +15,10 @@ padding: 90px 45px;
   z-index: 100;
 
   &__left {
-    left: 0; 
+    left: -15px; 
     right: auto;
     cursor: pointer;
+    border: 0px;
     span {
       &:before {
         transform: rotate(90deg);
@@ -24,9 +28,10 @@ padding: 90px 45px;
   }
 
   &__right {
-    right: 3vw;
+    right: -15px;
     left: auto;
     cursor: pointer;
+    border: 0px;
     span {
       &:before {
         transform: rotate(-90deg);
@@ -102,8 +107,8 @@ font-size: 45px;
 
 &__list {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  //height: 100%;
+ // overflow: hidden;
 }
 
 &__elem {
