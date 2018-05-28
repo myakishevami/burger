@@ -12,6 +12,11 @@
     background-color: #2f3234;
     opacity: 0.929;
     display: flex;
+
+    @include tablets {
+      width: 100%;
+      text-align: center;
+    }
   }
     
   &__title {

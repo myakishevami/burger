@@ -7,6 +7,11 @@ $red: #e35028;
 //normalize
 @import "misc/normalize.scss";
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+
 // setups
 @import "misc/mixins.scss";
 @import "misc/fonts.scss";
@@ -17,7 +22,6 @@ $red: #e35028;
 //common
 @import "blocks/common/btn.scss";
 @import "blocks/common/section-title.scss";
-
 
 // blocks
 @import "blocks/hero.scss";
@@ -35,6 +39,10 @@ $red: #e35028;
 @import "blocks/popup.scss";
 @import "blocks/nav.scss";
 @import "blocks/jquery.fullpage.css";
+@import "blocks/hamburger-menu-link.scss";
+@import "blocks/hamburger-menu.scss";
+
+
 
 
 

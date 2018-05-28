@@ -16,6 +16,12 @@ height: 100vh;
   height: 50%;
   filter: grayscale(100%);
   cursor: pointer;
+
+@include tablets {
+  width: 50%;
+  height: 25%;
+}
+
   &:hover {
     .reviews__hover {
       opacity: 1;
@@ -29,6 +35,13 @@ height: 100vh;
   font-size: rem(14px);
   color: #fff;
   text-align: left;
+  @include tablets {
+    padding: rem(15px) 0;
+    text-align: center;
+  }
+  @include phones {
+    display: none;
+  }
 }
 
 &__hover {
@@ -36,12 +49,22 @@ opacity: 0;
 transition: 0.3s;
 padding: rem(50px) rem(20px);
 color: #fff;
+@include tablets {
+  padding: rem(20px) rem(50px);
+  text-align: center;
+}
 }
 
 &__title {
   @include gagalin();
   font-size: rem(14px);
   color: #fff;
+  @include tablets {
+    text-align: center;
+  }
+  @include phones {
+    font-size: rem(24px);
+  }
 }
 }
 

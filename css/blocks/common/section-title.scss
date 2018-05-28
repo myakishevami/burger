@@ -2,6 +2,10 @@
   @include gagalin();
   font-size: rem(72px);
   color: $yellow;
+
+  @include phones {
+    font-size: rem(63px);
+  }
   
   &_color_black {
     color: $black;
