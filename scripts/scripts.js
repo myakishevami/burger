@@ -28,4 +28,18 @@ $('.reviews-popups__close').on('click', function (e) {
    $('.reviews-popups').removeClass('reviews-popups__active');
 });
 
+$('.hamburger-menu-link').on('click', function (e) {
+	e.preventDefault()
+  $('.hamburger-popups').addClass('hamburger-popups__active');
+});
+
+$('.hamburger-popups__close').on('click', function (e) {
+	e.preventDefault()
+   $('.hamburger-popups').removeClass('hamburger-popups__active');
+});
+
+$('.nav__link__hamburger').on('click', function (e) {
+	   $('.hamburger-popups').removeClass('hamburger-popups__active');
+});
+
 });
