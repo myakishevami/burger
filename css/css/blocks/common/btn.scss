@@ -1,0 +1,15 @@
+.btn {
+  padding: rem(10px) rem(15px);
+  text-align: center;
+  background: $red;
+  color: #fff;
+  text-decoration: none;
+  border-radius: rem(5px);
+  height: 100%;
+  border: 0;
+  &__reviews {
+    background-color: #1f2122;
+    }
+
+}
+

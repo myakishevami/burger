@@ -1,0 +1,48 @@
+.nav-sidebar {
+  position: fixed;
+  top: rem(90px);
+  right: rem(50px);
+  
+  @include tablets {
+    display: none;
+  }
+}
+
+.active {
+  .nav-list-elem {
+    margin-bottom: rem(15px);
+    border-radius: 50%;
+    width: rem(20px);
+    height: rem(20px);
+    background-color: #fff;
+   }
+}
+
+.nav-elem {
+  display: inline-block;
+  margin-bottom: rem(15px);
+  border: rem(1px) solid transparent;
+  border-radius: 50%;
+  width: rem(16px);
+  height: rem(16px);
+  position: relative;
+  
+  &:before {
+    border-radius: 50%;
+    width: rem(8px);
+    height: rem(8px);
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+  }
+}
+.nav-list-elem {
+&:hover, &.active {
+   .nav-elem {
+    border: rem(1px) solid #fff;
+  }
+}
+}

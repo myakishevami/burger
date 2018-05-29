@@ -1,0 +1,62 @@
+.reviews-popups {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(47, 50, 52, 0.92);
+  z-index: 2000;
+  transition: 0.3s;
+
+  &__active {
+    top: 0;
+  }
+}
+
+.reviews-popups__window {
+  position: relative;
+  background-color: #FFF;
+  padding: rem(20px);
+  border-radius: rem(10px);
+  border: rem(1px) solid #e45028;
+  width: 80%;
+  min-width: rem(300px);
+  max-width: rem(460px);
+  max-height: rem(250px);
+  min-height: rem(200px);
+}
+
+.reviews-popups__name {
+  color: #2f3234;
+  @include gagalin;
+  font-size: rem(14px);
+  text-align: left;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 0 rem(20px) 0;
+}
+
+.reviews-popups__text {
+  color: #2f3234;
+  @include ubuntu;
+  font-size: rem(14px);
+  text-align: justify;
+  height: 100%;
+  overflow: hidden;
+}
+
+.reviews-popups__close {
+  position: absolute;
+  padding: rem(5px);
+  top: rem(20px);
+  right: rem(20px);
+
+  &-img {
+    width: rem(20px);
+    height: rem(20px);
+  }
+ }

@@ -1,0 +1,90 @@
+.order {
+  background: url('../img/fon_order.jpg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  &__container {
+    @include tablets {
+      text-align: center;
+    }
+  }
+
+&__btn {
+margin-right: rem(10px);
+}
+
+&__part {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  @include tablets {
+    flex-direction: column;
+    //padding: 0 rem(148px);
+    @include phones {
+      padding: 0;
+      //text-align: center;
+    }
+  }
+}
+
+  &__form {
+    width: 100%;
+
+    &__row {
+      display: flex;
+       
+      &-btn {
+        @include phones {
+          padding: rem(30px) 25% 0 30%;
+        }
+      }
+
+      &__block {
+        flex: 1;
+        margin-right: rem(20px);
+
+        &-btn {
+        @include phones {
+         text-align: center;
+         padding-top: rem(30px);
+        }
+      }
+       
+        &--text {
+          padding: rem(8px) rem(20px);
+          border-radius: rem(5px);
+          border: rem(2px) solid transparent;
+          width: 100%;
+          margin-bottom: rem(10px);
+
+          &-comment {
+            @include phones {
+              height: rem(110px);
+            }
+          }
+          
+
+          &:focus {
+            border-color: $yellow;
+          }
+        }
+        &--name {
+          display: inline-block;
+        }
+
+        &--radio {
+          margin-bottom: rem(10px);
+          
+          &:checked {
+            color: $red;
+          }
+        }
+
+        &--check {
+          margin-bottom: rem(10px);
+        }
+      }
+    }
+  }
+}
+
