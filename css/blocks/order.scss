@@ -19,7 +19,7 @@ margin-right: rem(10px);
   flex-flow: row nowrap;
   @include tablets {
     flex-direction: column;
-    padding: 0 rem(148px);
+    //padding: 0 rem(148px);
     @include phones {
       padding: 0;
       //text-align: center;
