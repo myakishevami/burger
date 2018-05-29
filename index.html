@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,700&amp;subset=cyrillic,cyrillic-ext"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./css/main.css" rel="stylesheet">
     <script type="text/javascript" src="./scripts/main.js"></script>
     <script src="./scripts/map.js"></script>
@@ -17,6 +18,7 @@
     <script src="./scripts/popup.js"></script>
     <script src="./scripts/jquery.fullpage.js"></script>
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/common.js"></script>
 </head>
 
 <body>
@@ -443,47 +445,47 @@
                 <div class="container order__container">
                     <h1 class="section-title section-title_position_center">закажите доставку</h1>
                     <div class="order__part">
-                        <form class="order__form">
+                        <form method = "post" action = "server.php"  class="order__form">
                             <div class="order__form__row">
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Имя</div>
-                                    <input type="text" class="order__form__row__block--text">
+                                    <input type="text" name="user-name" class="order__form__row__block--text" required>
                                 </label>
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Телефон</div>
-                                    <input type="text" class="order__form__row__block--text">
+                                    <input type="text" name ="user-phone" class="order__form__row__block--text" required>
                                 </label>
                             </div>
                             <div class="order__form__row">
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Улица</div>
-                                    <input type="text" class="order__form__row__block--text">
+                                    <input type="text" name ="user-street" class="order__form__row__block--text" required>
                                 </label>
                             </div>
                             <div class="order__form__row">
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Дом</div>
-                                    <input type="text" class="order__form__row__block--text">
+                                    <input type="text" name ="user-house" class="order__form__row__block--text" required>
                                 </label>
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Корпус</div>
-                                    <input type="text" class="order__form__row__block--text">
+                                    <input type="text" name ="user-corp" class="order__form__row__block--text" required>
                                 </label>
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Квартира</div>
-                                    <input type="text" class="order__form__row__block--text">
+                                    <input type="text" name ="user-room" class="order__form__row__block--text" required>
                                 </label>
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Этаж</div>
-                                    <input type="text" class="order__form__row__block--text">
+                                    <input type="text" name ="user-floor" class="order__form__row__block--text" required>
                                 </label>
                             </div>
                         </form>
-                        <form class="order__form">
+                        <form method = "post" action = "server.php" class="order__form">
                             <div class="order__form__row">
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Комментарий</div>
-                                    <input type="text" class="order__form__row__block--text order__form__row__block--text-comment">
+                                    <input type="text" name ="user-comment" class="order__form__row__block--text order__form__row__block--text-comment" required>
                                 </label>
                             </div>
                             <div class="order__form__row">
@@ -498,13 +500,13 @@
                             </div>
                             <div class="order__form__row">
                                 <label class="order__form__row__block order__form__row__block-btn">
-                                    <input type="checkbox" class="order__form__row__block--check">
+                                    <input type="checkbox" name = "user-call" class="order__form__row__block--check">
                                     <div class="order__form__row__block--name">Не перезванивать</div>
                                 </label>
                             </div>
                             <div class="order__form__row order__form__row-btn">
-                                <a href="#" class="btn order__btn">Заказать</a>
-                                <a href="#" class="btn">Очистить</a>
+                                <button type="submit" class="btn order__btn">Заказать</button>
+                                <button type="submit" class="btn">Очистить</button>
                             </div>
                         </form>
                     </div>
