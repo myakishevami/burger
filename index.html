@@ -446,6 +446,7 @@
                     <h1 class="section-title section-title_position_center">закажите доставку</h1>
                     <div class="order__part">
                         <form method = "post" action = "server.php"  class="order__form">
+                            <div class ="order__form-part">
                             <div class="order__form__row">
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Имя</div>
@@ -480,8 +481,8 @@
                                     <input type="text" name ="user-floor" class="order__form__row__block--text" required>
                                 </label>
                             </div>
-                        </form>
-                        <form method = "post" action = "server.php" class="order__form">
+                        </div>
+                        <div class ="order__form-part">
                             <div class="order__form__row">
                                 <label class="order__form__row__block">
                                     <div class="order__form__row__block--name">Комментарий</div>
@@ -508,6 +509,7 @@
                                 <button type="submit" class="btn order__btn">Заказать</button>
                                 <button type="submit" class="btn">Очистить</button>
                             </div>
+                        </div>
                         </form>
                     </div>
                 </div>
