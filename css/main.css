@@ -7,6 +7,7 @@
  *    IE on Windows Phone and in iOS.
  */
 @import url(blocks/jquery.fullpage.css);
+@import url(blocks/ajax_style.css);
 html {
   line-height: 1.15;
   /* 1 */
