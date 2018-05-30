@@ -1,4 +1,5 @@
-$('#order-form').on('submit', submitForm);
+$(document).ready(function() {
+$('#order__form').on('submit', submitForm);
 
 function submitForm (ev) {
     ev.preventDefault();
@@ -21,4 +22,19 @@ function submitForm (ev) {
         alert("Request failed: " + textStatus);
     });
 
+    // Универсальная функция для работы с формами
+    var ajaxForm = function (form) {
+        var data = form.serialize(),
+            url = form.attr('action');
+        
+        return $.ajax({
+            type: 'POST',
+            url: url,
+            dataType : 'JSON',
+            data: data
+        })
+    };
+
 };
+
+});
